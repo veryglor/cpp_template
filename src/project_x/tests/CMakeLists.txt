@@ -1,0 +1,2 @@
+add_test_executable(test_main lib_file lib_file_x)
+add_benchmark(bench_main lib_file_x)

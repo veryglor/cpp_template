@@ -1,0 +1,15 @@
+[generators]
+cmake_find_package
+
+[requires]
+abseil/20211102.0
+benchmark/1.6.1
+boost/1.79.0
+capnproto/0.9.1
+eigen/3.4.0
+gtest/1.11.0
+jemalloc/5.2.1
+onetbb/2020.3
+spdlog/1.10.0
+thrust/1.16.0
+zmqpp/4.2.0

@@ -1,6 +1,3 @@
 #include <iostream>
 
-void a()
-{
-    std::cout << "WTF\n";
-}
+void a() { std::cout << "WTF\n"; }

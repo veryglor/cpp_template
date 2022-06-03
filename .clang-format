@@ -1,4 +1,4 @@
-BasedOnStyle: Mozilla
+BasedOnStyle: Google
 AccessModifierOffset: -4
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
@@ -10,3 +10,16 @@ ColumnLimit: 150
 CommentPragmas: '^ NOLINT'
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
+IncludeCategories:
+  - Regex: '^(<.*\.h.*>)'
+    CaseSensitive: false
+    Priority: -3
+  - Regex: "^<.*"
+    CaseSensitive: false
+    Priority: -2
+  - Regex: '^(.*/.*\.hpp)|(.*/.*\.h)|(.*/.*\.cuh)'
+    CaseSensitive: false
+    Priority: -1
+  - Regex: '^(.*\.hpp)|(.*\.cuh)'
+    CaseSensitive: false
+    Priority: 0

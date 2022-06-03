@@ -19,7 +19,7 @@ if(COVERAGE)
     add_custom_target(
         coverage
         COMMAND ${LCOV_PATH} --capture --directory ${CMAKE_CURRENT_SOURCE_DIR} --output-file coverage.info --no-external
-        COMMAND ${LCOV_PATH} --remove coverage.info '**/tests/*' --output-file coverage.info
+        COMMAND ${LCOV_PATH} --remove coverage.info '**/tests/*' '**/test/*' --output-file coverage.info
         COMMAND ${GENTHML_PATH} coverage.info --output-directory ${CMAKE_BINARY_DIR}
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     )

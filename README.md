@@ -5,11 +5,17 @@ To use a dependency mention it in the *CMakeLists.txt*, e.g.: *find_package(absl
 
 # Options
 *BUILD_BENCH*, default=OFF: build benchmarks, declared with `add_benchmark` function.
+
 *BUILD_TESTS*, default=ON: build tests declared with `add_test_executable` function.
+
 *CLANG_TIDY*, default=ON: use clang-tidy for linting.
+
 *COVERAGE*, default=OFF: collect code coverage information.
+
 *RUN_CONAN*, default=OFF: whether to run conan or not (usually needed only for initial configuration or when dependencies changed)
+
 *USE_SANITIZERS*, default=OFF: use address and undefined behavior sanitizers
+
 
 # Benchmarks
 Benchmarks can be declared with `add_benchmark` function, see `cmake/benchmarks.cmake` for usage details.

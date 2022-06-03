@@ -2,6 +2,7 @@
 Managed by *conan* https://conan.io/
 
 List of used dependencies is in the **conanfile.txt**
+
 To use a dependency mention it in the **CMakeLists.txt**, e.g.: `find_package(absl REQUIRED)` for the `abseil` library.
 
 # Options

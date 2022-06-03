@@ -7,9 +7,5 @@ if(NOT CLANG_TIDY_PATH)
 endif()
 
 if(CLANG_TIDY)
-    set(CMAKE_CXX_CLANG_TIDY
-    ${CLANG_TIDY_PATH};
-    -header-filter=.;
-    -checks=*,-modernize-use-trailing-return-type,-llvm-*,-llvmlibc-*;
-    -warnings-as-errors=*;)
+    set(CMAKE_CXX_CLANG_TIDY ${CLANG_TIDY_PATH})
 endif()

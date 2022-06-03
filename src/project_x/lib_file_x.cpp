@@ -1,5 +1,6 @@
 #include <iostream>
 #include <random>
+#include "addressbook.capnp.h"
 
 int get_a_number()
 {

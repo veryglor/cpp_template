@@ -18,9 +18,9 @@ To use a dependency mention it in the **CMakeLists.txt**, e.g.: `find_package(ab
 
 **USE_SANITIZERS**, default=**OFF**: use address and undefined behavior sanitizers
 
-# Building
+# Building (need to run conan at least first time)
 ```
-mkdir -p build && cd build && cmake .. && make -j12
+mkdir -p build && cd build && cmake .. -DRUN_CONAN=1 && make -j12
 ```
 
 # Coverage
